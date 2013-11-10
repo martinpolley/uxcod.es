@@ -1,0 +1,42 @@
+article, aside, figure, footer, header, hgroup, 
+menu, nav, section { display: block; }
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+header {
+  background-color: #555555;
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+header>h1 {
+  display: inline-block;
+  margin: 0;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+
+section {
+  margin: 1rem;
+}
+
+div#notify {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #D58D01;
+  background-color: #FEFDC1;
+  margin: 0;
+  border-bottom: 1px solid #D58D01;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+div#notify>p {
+  margin: 0;
+  padding: 1rem;
+}
