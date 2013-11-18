@@ -14,7 +14,7 @@ $(document).ready(function(){
   
   /* Attaches a handler function to the notifications checkbox that toggles the visibility of the notification sub-options. */
   $('input#cb_enable_notify').change(function(){
-    $('div.sub_options').show();
+    $('div.sub_options').toggle();
   });
   
 });
