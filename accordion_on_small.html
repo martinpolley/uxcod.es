@@ -18,6 +18,7 @@
       </div>
     </div>
     
+  <!-- "Regular" content for bigger screens -->
   <div class="hide-for-small-only">
     <div class="row">
       <div class="large-12 columns">
@@ -62,7 +63,7 @@
     </div>
 </div>
       
-<!-- Accordion -->      
+<!-- Accordion for smaller screens -->      
 <dl class="accordion show-for-small-only" data-accordion>
   <dd class="accordion-navigation">
     <a href="#panel1">First content section</a>
@@ -99,9 +100,12 @@
   </dd>
 </dl>            
       
+    <!-- Pull in jQuery and Foundation JS -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/js/vendor/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/js/foundation.min.js"></script>
     
+    <!-- Call the foundation() method on the document. Without this, Interchange won't work. -->
+    <!-- Note also that Interchange only works over HTTP. If you view this locally, it won't work. -->
     <script>
       $(document).foundation();
     </script>
