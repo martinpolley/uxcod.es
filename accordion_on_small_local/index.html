@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion for mobile only</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Title</h1>
+      </div>
+    </div>
+    
+  <div class="hide-for-small-only">
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>First content section</h3>
+            <div data-interchange="[section1.html, (small)]">
+              <div data-alert class="alert-box secondary radius">
+                This is the default content.
+                <a href="#" class="close">&times;</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>Second content section</h3>
+            <div data-interchange="[section2.html, (small)]">
+              <div data-alert class="alert-box secondary radius">
+                This is the default content.
+                <a href="#" class="close">&times;</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>Third content section</h3>
+            <div data-interchange="[section3.html, (small)]">
+              <div data-alert class="alert-box secondary radius">
+                This is the default content.
+                <a href="#" class="close">&times;</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+      
+      
+      
+      
+      
+<!-- Accordion -->      
+<dl class="accordion show-for-small-only" data-accordion>
+  <dd class="accordion-navigation">
+    <a href="#panel1">First content section</a>
+    <div id="panel1" class="content active">
+        <div data-interchange="[section1.html, (small)]">
+          <div data-alert class="alert-box secondary radius">
+            This is the default content.
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+    </div>
+  </dd>
+  <dd class="accordion-navigation">
+    <a href="#panel2">Second content section</a>
+    <div id="panel2" class="content">
+        <div data-interchange="[section2.html, (small)]">
+          <div data-alert class="alert-box secondary radius">
+            This is the default content.
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+    </div>
+  </dd>
+  <dd class="accordion-navigation">
+    <a href="#panel3">Third content section</a>
+    <div id="panel3" class="content">
+        <div data-interchange="[section3.html, (small)]">
+          <div data-alert class="alert-box secondary radius">
+            This is the default content.
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+    </div>
+  </dd>
+</dl>            
+      
+      
+      
+      
+
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

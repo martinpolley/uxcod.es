@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+<link href="accordion.css" rel="stylesheet" type="text/css" />
+<script src="accordion.js"></script>
+
+<meta charset=utf-8 />
+<title>Accordion</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+  <h2>Settings</h2>
+  <div id="settings_accordion">
+    <h3>Notifications</h3>
+    <div>
+      <input type="checkbox" id="cb_enable_notify"/>
+      <label for="cb_enable_notify">Enable notifications</label>
+      <div class="sub_options">
+        <p>Notify me via:</p>
+        <input type="radio" name="notify_type" id="notify_email"/>
+        <label for="notify_email">Email</label>
+        <input type="radio" name="notify_type" id="notify_phone"/>
+        <label for="notify_phone">Phone</label>
+        <input type="radio" name="notify_type" id="notify_sms"/>
+        <label for="notify_sms">SMS</label>
+      </div>
+    </div>
+    
+    <h3>Location</h3>
+    <div>
+      <input type="checkbox" id="cb_enable_loc"/>
+      <label for="cb_enable_loc">Use my location</label>
+    </div>
+    
+    <h3>Sound</h3>
+    <div>
+      <input type="checkbox" id="cb_enable_sound"/>
+      <label for="cb_enable_sound">Enable audio alerts</label>
+    </div>
+    
+  </div>
+</body>
+</html>

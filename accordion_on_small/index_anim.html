@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion for mobile only</title>
+    <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+      
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/css/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/css/foundation.min.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Title</h1>
+      </div>
+    </div>
+    
+  <!-- "Regular" content for bigger screens -->
+  <div class="hide-for-small-only">
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>First content section</h3>
+            <div data-interchange="[section1.html, (default)]">
+              <div data-alert class="alert-box secondary radius">
+                This is the default content.
+                <a href="#" class="close">&times;</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>Second content section</h3>
+            <div data-interchange="[section2.html, (default)]">
+              <div data-alert class="alert-box secondary radius">
+                This is the default content.
+                <a href="#" class="close">&times;</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>Third content section</h3>
+            <div data-interchange="[section3.html, (default)]">
+              <div data-alert class="alert-box secondary radius">
+                This is the default content.
+                <a href="#" class="close">&times;</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+      
+<!-- "Regular" content for bigger screens -->
+<dl class="accordion show-for-small-only" data-accordion>
+  <dd class="accordion-navigation">
+    <a href="#panel1">First content section</a>
+    <div id="panel1" class="content active">
+        <div data-interchange="[section1.html, (default)]">
+          <div data-alert class="alert-box secondary radius">
+            This is the default content.
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+    </div>
+  </dd>
+  <dd class="accordion-navigation">
+    <a href="#panel2">Second content section</a>
+    <div id="panel2" class="content">
+        <div data-interchange="[section2.html, (default)]">
+          <div data-alert class="alert-box secondary radius">
+            This is the default content.
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+    </div>
+  </dd>
+  <dd class="accordion-navigation">
+    <a href="#panel3">Third content section</a>
+    <div id="panel3" class="content">
+        <div data-interchange="[section3.html, (small)]">
+          <div data-alert class="alert-box secondary radius">
+            This is the default content.
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+    </div>
+  </dd>
+</dl>            
+      
+    <!-- Pull in jQuery and Foundation JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/js/vendor/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/js/foundation.min.js"></script>
+    
+    <!-- Call the foundation() method on the document. Without this, Interchange won't work. -->
+    <!-- Note also that Interchange only works over HTTP. If you view this locally, it won't work. -->
+    <!-- The second part animates the accordion. -->
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+      $(".accordion dd a").on("click", function (event)
+      {
+          var content_div = $(this).parent().find('.content');
+          if (content_div.hasClass('active'))
+          {
+            $(content_div).attr('style', 'display: block;');
+            $(content_div).slideUp("normal");
+          }
+          else
+          {
+            $(".accordion div.content").slideUp("normal");
+            $(content_div).slideDown("normal");
+          }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body, .ui-accordion {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+div#settings_accordion {
+  max-width: 300px;
+}
+
+div.sub_options {
+  padding-left: 2.5rem;
+  display: none;
+}
