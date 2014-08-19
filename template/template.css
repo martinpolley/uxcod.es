@@ -1,0 +1,7 @@
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body, .ui-accordion {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 0.9rem;
+}
+

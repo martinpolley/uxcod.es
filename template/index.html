@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion for mobile only</title>
+    <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+      
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/css/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/css/foundation.min.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+    
+    <!-- Title, delete if not needed -->
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Title</h1>
+      </div>
+    </div>
+    
+   <!-- Actual example goes here -->
+      
+    <!-- Remove the ones that are not needed -->  
+    <!-- Pull in jQuery and Foundation JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/js/vendor/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.3/js/foundation.min.js"></script>
+    
+    <!-- Call the foundation() method on the document. Without this, Interchange won't work. -->
+    <!-- Note also that Interchange only works over HTTP. If you view this locally, it won't work. -->
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
