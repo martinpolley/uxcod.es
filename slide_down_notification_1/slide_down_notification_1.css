@@ -40,3 +40,9 @@ div#notify>p {
   margin: 0;
   padding: 1rem;
 }
+
+span#close{
+  font-weight: bold;
+  padding-left: 2rem;
+  cursor: pointer;
+}

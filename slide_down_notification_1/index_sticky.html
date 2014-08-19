@@ -1,77 +1,19 @@
 <!DOCTYPE html>
 <html>
-<!--
-  Created using jsbin.com
--->
+
 <head>
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 <meta charset=utf-8 />
-  <title>Animation 2: Sticky Slide-down Notification</title>
+  <title>Sticky Slide-down Notification</title>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<style>
-  article, aside, figure, footer, header, hgroup, 
-  menu, nav, section { display: block; }
-</style>
-<style>
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.9rem;
-  margin: 0;
-}
+<link href="slide_down_notification_1.css" rel="stylesheet" type="text/css" />
+<script src="slide_down_notification_2.js"></script>
+    
 
-header {
-  background-color: #555555;
-  padding: 1rem;
-  padding-top: 1.5rem;
-}
-
-header>h1 {
-  display: inline-block;
-  margin: 0;
-  margin-left: 1rem;
-  color: #ffffff;
-}
-
-section {
-  margin: 1rem;
-}
-
-div#notify {
-  font-size: 1.3rem;
-  text-align: center;
-  color: #D58D01;
-  background-color: #FEFDC1;
-  margin: 0;
-  border-bottom: 1px solid #D58D01;
-  position: absolute;
-  width: 100%;
-  display: none;
-}
-
-div#notify>p {
-  margin: 0;
-  padding: 1rem;
-}
-
-span#close{
-  font-weight: bold;
-  padding-left: 2rem;
-  cursor: pointer;
-}
-</style>
-<script>
-$(document).ready(function(){
-  $('div#notify').show('slide', { direction: "up" }, 'slow');
-  
-  $('span#close').click(function(){
-    $(this).parent().parent().hide('slide', { direction: "up" }, 'slow');
-  });
-});
-</script>
 </head>
 <body>
   <header>
