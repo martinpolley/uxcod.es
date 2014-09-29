@@ -31,12 +31,14 @@
   
   <script>
     $(document).ready(function(){
-      $('#more').on('click', function(){
+      $('#more').on('click', function(e){
+        e.preventDefault();
         $('#extra').show();
         $(this).hide();
         $('#less').show();
       });
-      $('#less').on('click', function(){
+      $('#less').on('click', function(e){
+        e.preventDefault();
         $('#extra').hide();
         $(this).hide();
         $('#more').show();
